@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+}
+.sidebar{
+    position: absolute;
+    background: rgb(206, 189, 189);
+    height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Macondo', cursive;
+    transition: transform 0.2s ease-in;
+    
+}
+
+.sidebar nav{
+    padding: 30px;
+
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 15px;
+    padding: 14px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    width:90vw;
+    /* padding: 23px; */
+}
+
+.infocontainer{
+    height: 70vh;
+    width: 80vw;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devinfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+.hello{
+    font-size: 3em;
+}
+.name{
+    font-size:3em;
+    font-weight: bold;
+    
+}
+.about{
+    font-size: 2.5em;
+}
+.moreabout{
+    font-size: 2em;
+    margin:23px;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size: 5px;
+    /* padding: 40px; */
+}
+.btn{
+    padding: 10px;
+    color: white;
+    background-color: skyblue;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 2px;
+    cursor: pointer;
+
+    
+}
+.btn-sm{
+    margin: 10px;
+    padding: 6px 10px;
+    font-size: 11px;
+}
+.btn:hover{
+    color: skyblue;
+    background-color: white;
+}
+.devpic img{
+    
+    width: 300px;
+    height: 60vh;
+
+}
+
+.contactform{
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 50px 30px;
+    margin: 0 130px;
+    /* height: 100vh; */
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+    font-size: 25px;
+    /* margin: 0 10px; */
+    padding: 10px;
+}
+
+.contactform form div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contactform form div input{
+    width: 25vw;
+    border-radius: 7px;
+    font-size: 12px;
+    margin: 3px 0;
+    padding: 2px 3px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: blue;
+    /* margin: 0 1px; */
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    margin: 2px 0;
+    width: 20px;
+}
+.btn-primary{
+    margin: 0 10px;
+}
+.blogcontainer{
+    margin: 0 80px;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.blogcontainer h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 20px 20px;
+}
+.blogitem p{
+    font-family: 'Source Code Pro', monospace;
+}
+.introcontainer{
+    margin: 20px 80px;
+}
+.introcontainer p{
+    font-family: 'Source Code Pro', monospace;
+}
+.skillcontainer{
+    margin: 20px 0;
+}
+.skillbox{
+    margin: 10px 0;
+}
+
+.hundred{
+    width:300px;
+    height:10px;
+    /* background-color: red; */
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.t100{
+    width: 300px;
+    height: 10px;
+    background-color: yellow;
+
+}
+
+.sixty{
+    width: 180px;
+    height: 10px;
+    background-color: green;
+}
+.ninty{
+    width: 270px;
+    height: 10px;
+    background-color: blueviolet;
+}
+
+.sidebarGo{
+    transform: translate(-160px,0);
+    position: absolute;
+}
+
+@media (max-width: 1000px){
+    /* *{
+        background-color: red;
+    } */
+    .buttons{
+        font-size: 6px;
+    }
+    .devpic{
+        display: none;
+    }
+    .devinfo{
+        font-size:10px;
+    }
+    /* .sidebar{
+        transform: translate(-160px,0);
+        position: absolute;
+    } */
+    .intro,.blogcontainer,.contactform{
+        margin: 8px; 
+    }
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 95px;
+
+}
+
+.servicecontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 30vw;
+}
+.op{
+    border: 2px solid ;
+    border-radius: 10px;
+    border-color: blanchedalmond;
+}
+.ser p{
+    font-size: larger;
+    color: rgb(12, 165, 79);
+    margin: 20px auto;
+}
